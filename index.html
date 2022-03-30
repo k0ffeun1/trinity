@@ -5,62 +5,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
     <title>trinity</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" data-aos="fade-in" data-aos-duration="2000">
         <div class="container">
-            <div class="header__inner">
-                <div class="logo">
-                    trinity
+            <div class="header__wrapper flex">
+                <div class="header__inner" data-aos="fade-down" data-aos-duration="2000">
+                    <div class="logo">
+                        <a class="logo" href="">trinity</a>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__item-link" href="">о нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__item-link" href="">кейсы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__item-link" href="">связь</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__item-link" href="#">
-                                о нас
-                            </a>
+                <div class="header__center">
+                    <h1 class="header__title" data-aos="fade-up" data-aos-duration="2000">
+                        trinity <br>
+                        production
+                    </h1>
+                    <img class="header__img" src="images/header/header__logo.png" alt="" data-aos="fade-in"
+                        data-aos-duration="2000">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="services">
+            <div class="container">
+                <div class="services__wrapper">
+                    <ul class="services__list">
+                        <li class="services__item" data-aos="fade-right" data-aos-delay="150" data-aos="fade-in"
+                            data-aos-duration="1100">
+                            <a class="services__item-link" href="">разработка</a>
                         </li>
-                        <li class="menu__item">
-                            <a class="menu__item-link" href="#">
-                                кейсы
-                            </a>
+                        <li class="services__item" data-aos="fade-left" data-aos-delay="300" data-aos="fade-in"
+                            data-aos-duration="1300">
+                            <a class="services__item-link" href="">адаптация</a>
                         </li>
-                        <li class="menu__item">
-                            <a class="menu__item-link" href="#">
-                                связь
-                            </a>
+                        <li class="services__item" data-aos="fade-right" data-aos-delay="450" data-aos="fade-in"
+                            data-aos-duration="1500">
+                            <a class="services__item-link" href="">модификация</a>
+                        </li>
+                        <li class="services__item" data-aos="fade-left" data-aos-delay="600" data-aos="fade-in"
+                            data-aos-duration="1700">
+                            <a class="services__item-link" href="">сопровождение</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-            <div class="header__content">
-                <h1 class="header__title">
-                    trinity production
-                </h1>
+        </section>
+        <section class="about">
+            <img class="about__bg" src="images/about/about__bg.png" alt="">
+            <div class="container">
+                <div class="about__wrapper flex">
+                    <div class="about__inner">
+                        <h2 class="about__title title" data-aos="fade-up" data-aos-duration="2000">
+                            О нас
+                        </h2>
+                        <p class="about__text" data-aos="fade-down" data-aos-duration="2000">
+                            Мы заключаем договоры оказания услуг на создание веб-сайтов, промо-сайтов, лендинговых
+                            страниц,
+                            разработку интерактивных сервисов, мобильных приложений, техническую поддержку (донастройку
+                            сайтов, тестирование, обновление, обслуживание серверов).
+                        </p>
+                    </div>
+                    <img class="about__img" src="images/about/about__img.png" alt="" data-aos="zoom-in-left"
+                        data-aos-duration="3000" data-aos-offset="500">
+                </div>
             </div>
-        </div>
-    </header>
-    <div class="center__bottom">
-        <div class="header__list">
-            <div class="header__list-item header__list-item1">
-                <a class="header__list-item-link" href="">разработка</a> 
+        </section>
+        <section class="slider1__block">
+            <div class="slider1__wrapper flex">
+                <div class="slider1">
+                    <div class="slider_1_item">
+                        <img class="slider1__item-img" src="images/slider/slider__item1.png" alt="">
+                    </div>
+                    <div class="slider1__item">
+                        <img class="slider1__item-img" src="images/slider/slider__item2.png" alt="">
+                    </div>
+                    <div class="slider1__item">
+                        <img class="slider1__item-img" src="images/slider/slider__item3.png" alt="">
+                    </div>
+                    <div class="slider1__item">
+                        <img class="slider1__item-img" src="images/slider/slider__item4.png" alt="">
+                    </div>
+                </div>
+                <div class="slider1__wrapper-textblock">
+                    <div class="slider1__textblock-inner">
+                        <div class="running__line-wrapper">
+                            <span class="runn__line-mg"> trinity production </span>
+                            <span class="runn__line-mg"> trinity production </span>
+                            <span class="runn__line-mg"> trinity production </span>
+                            <span class="runn__line-mg"> trinity production </span>
+                        </div>
+                        <div class="running__line-wrapper">
+                            <span class="runn__line-mg"> trinity production </span>
+                            <span class="runn__line-mg"> trinity production </span>
+                            <span class="runn__line-mg"> trinity production </span>
+                            <span class="runn__line-mg"> trinity production </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="header__list-item header__list-item2">
-                <a class="header__list-item-link" href="">адаптация</a> 
-            </div>
-            <div class="header__list-item header__list-item3">
-                <a class="header__list-item-link" href="">модификация</a> 
-            </div>
-            <div class="header__list-item header__list-item4">
-                <a class="header__list-item-link" href="">сопровождение</a> 
-            </div>
-        </div>
-    </div>
-    </div>
-    </header>
-
+        </section>
+    </main>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
