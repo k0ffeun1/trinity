@@ -22,13 +22,13 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a class="menu__item-link" href="">о нас</a>
+                                <a class="menu__item-link" href="#about">о нас</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__item-link" href="">кейсы</a>
+                                <a class="menu__item-link" href="#keys">кейсы</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__item-link" href="">связь</a>
+                                <a class="menu__item-link" href="#contacts">связь</a>
                             </li>
                         </ul>
                     </nav>
@@ -69,7 +69,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <img class="about__bg" src="images/about/about__bg.png" alt="">
             <div class="container">
                 <div class="about__wrapper flex">
@@ -92,7 +92,7 @@
         <section class="slider1__block">
             <div class="slider1__wrapper flex">
                 <div class="slider1">
-                    <div class="slider_1_item">
+                    <div class="slider_1_item" data-aos="fade-down" data-aos-duration="2000">
                         <img class="slider1__item-img" src="images/slider/slider__item1.png" alt="">
                     </div>
                     <div class="slider1__item">
@@ -123,7 +123,112 @@
                 </div>
             </div>
         </section>
+        <section class="keys" id="keys">
+            <div class="keys__wrapper flex">
+                <h2 class="keys__title title" data-aos="fade-down" data-aos-duration="2000">
+                    кейсы
+                </h2>
+                <div class="slider2">
+                    <div class="slider2__item" data-aos="fade-down" data-aos-duration="2000">
+                        <img class="slider2__item-img" src="images/slider2/slider2__item1.jpg" alt="">
+                    </div>
+                    <div class="slider2__item">
+                        <img class="slider2__item-img" src="images/slider2/slider2__item2.jpg" alt="">
+                    </div>
+                    <div class="slider2__item">
+                        <img class="slider2__item-img" src="images/slider2/slider2__item3.jpg" alt="">
+                    </div>
+                    <div class="slider2__item">
+                        <img class="slider2__item-img" src="images/slider2/slider2__item4.jpg" alt="">
+                    </div>
+                    <div class="slider2__item">
+                        <img class="slider2__item-img" src="images/slider2/slider2__item5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <img class="contacts__img" src="images/contacts/contacts__img.svg" alt="">
+            <div class="container">
+                <div class="contacts__inner">
+                    <h2 class="contacts__title title" data-aos="fade-down" data-aos-duration="2000">
+                        связь
+                    </h2>
+                    <h3 class="contacts__subtitle subtitle" data-aos="fade-down" data-aos-duration="2000">
+                        <span class="fz__mini">Остались вопросы?</span> <br>
+                        Мы будем рады вам помочь!
+                    </h3>
+                    <form action="check.php" method="post" class="contacts__form" data-aos="fade-down" data-aos-duration="2000">
+                        <input class="form__content form__content-name" type="text" placeholder="Имя" name="login">
+                        <input class="form__content form__content-number" type="text" placeholder="Телефон"
+                            name="number">
+                        <button class="btn" type="submit">отправить</button> <br>
+                        <input class="form__content form__content-check" type="checkbox">согласен на обработку
+                        персональных данных (от 27.07.2006 №152-ФЗ)
+                    </form>
+                    <div class="contacts__content" data-aos="fade-down" data-aos-duration="2000">
+                        <div class="contacts__item">
+                            <img class="contacts__item-img" src="images/contacts/contacts__item-img1.svg" alt="">
+                            <div class="contacts__item-textblock conctacts__textblock">
+                                <h4 class="contacts__item-title">
+                                    Адрес
+                                </h4>
+                                <p class="contacts__item-text">
+                                    105082, г. Москва, вн. тер.
+                                    муниципальный округ
+                                    Красносельский, пер.
+                                    Спартаковский, д. 2, стр. 1,
+                                    этаж 1, помещ. 50
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <img class="contacts__item-img" src="images/contacts/contacts__item-img2.svg" alt="">
+                            <div class="contacts__item-textblock conctacts__textblock">
+                                <h4 class="contacts__item-title">
+                                    телефон
+                                </h4>
+                                <p class="contacts__item-text">
+                                    <a href="tel:+74995515551">+7 (499) 551-55-51</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <img class="contacts__item-img" src="images/contacts/contacts__item-img3.svg" alt="">
+                            <div class="contacts__item-textblock conctacts__textblock">
+                                <h4 class="contacts__item-title">
+                                    E-mail
+                                </h4>
+                                <p class="contacts__item-text">
+                                    <a href="mailto:info@trnprod.ru">
+                                        info@trnprod.ru
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="conacts__bottom">
+                    <a class="conacts__bottom-link" href="">
+                        Пользовательское соглашение
+                    </a>
+                    <a class="conacts__bottom-link" href="">
+                        Политика конфеденциальности
+                    </a>
+                </div>
+                <div class="hr"></div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__text">
+                    (с) 2022. Все права защищены.
+                </p>
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script> -->

@@ -43,6 +43,9 @@ $(document).ready(function () {
         initialSlide: 0,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 1500,
         dots: true,
         arrows: false,
         responsive: [
@@ -69,9 +72,15 @@ $(document).ready(function () {
     });
     $('.slider2').slick({
         initialSlide: 0,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
+        focusOnSelect: true,
+        centerMode: true,
+        centerPadding: '550px',
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 3000,
         arrows: true,
         responsive: [
             {
