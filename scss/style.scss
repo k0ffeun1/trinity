@@ -258,9 +258,11 @@ body {
 }
 .slider1__wrapper {
     height: 100vh;
-    justify-content: flex-start;
+
 }
 .slider1 {
+    position: relative;
+    z-index: 5;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 64px;
@@ -288,42 +290,33 @@ body {
 }
 .slider1__item-img {
 }
-.slider1__wrapper-textblock {
-    color: white;
-    font-size: 30px;
-    text-transform: uppercase;
-    white-space: nowrap;
+.marquee {
     overflow: hidden;
-    width: 100%;
+    color: white;
 }
-.slider1__textblock-inner {
+.marquee div {
     display: flex;
-    width: 100%;
-    animation-name: running__line;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    width: 200%;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 15s linear infinite;
 }
-.running__line-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.runn__line-mg {
-    display: block;
-    width: 20%;
-    margin-right: 20px;
-    white-space: nowrap;
+.marquee span {
+    float: left;
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
-@keyframes running__line {
+@keyframes marquee {
     0% {
-        transform: translateX(100%);
+        left: 0;
     }
     100% {
-        transform: translateX(0%);
+        left: -100%;
     }
 }
+
 @media (min-width: 2000px) {
     .slider1__wrapper {
         height: auto;
@@ -587,9 +580,8 @@ body {
     text-align: center;
     padding-top: 24px;
     padding-bottom: 24px;
-  }
+}
 
-  
 //==================================SCROLL__STYLES===================================================
 
 /* полоса прокрутки (скроллбар) */
