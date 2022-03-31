@@ -130,6 +130,9 @@ body {
 }
 .header__img {
     width: 30%;
+    margin-top: -3%;
+    position: relative;
+    z-index: 20;
 }
 @media (min-width: 2000px) {
     .header {
@@ -289,6 +292,28 @@ body {
     width: 100%;
 }
 .slider1__item-img {
+    margin-bottom: 33px;
+}
+.slider1__textblock {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.slider1__text {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.slider1__text:not(:last-child) {
+    margin-right: 42px;
+}
+.slider1__ellpise {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #00ABAA;
+    margin-right: 42px;
 }
 .marquee {
     overflow: hidden;
