@@ -77,7 +77,7 @@ $(document).ready(function () {
         dots: false,
         focusOnSelect: true,
         centerMode: true,
-        centerPadding: '550px',
+        centerPadding: '32.2%',
         autoplay: true,
         autoplaySpeed: 3000,
         speed: 3000,

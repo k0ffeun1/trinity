@@ -1,3 +1,5 @@
+//==================================FONTS===================================================
+
 @font-face {
     font-family: "EuclidFlex";
     src: url(../fonts/EuclidFlex-Regular.otf);
@@ -13,7 +15,9 @@
     src: url(../fonts/EuclidFlex-Bold.otf);
     font-weight: 700;
 }
+
 //==================================MAIN-STYLES===================================================
+
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -27,6 +31,16 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+@media (min-width: 2000px) {
+    .container {
+        max-width: 62.5%;
+    }
+}
+@media (min-width: 2600px) {
+    .container {
+        max-width: 1400px;
+    }
 }
 .flex {
     display: flex;
@@ -49,9 +63,17 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+@media (min-width: 2000px) {
+    .title {
+        font-size: 4vw;
+    }
+}
+
+//==================================HEADER===================================================
 
 .header {
     padding-top: 50px;
+    padding-bottom: 100px;
     color: white;
     background-image: url(../images/header/header__bg.jpg);
     background-size: cover;
@@ -93,7 +115,9 @@ body {
     color: #00808a;
 }
 .header__center {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .header__title {
     font-size: 120px;
@@ -106,11 +130,37 @@ body {
 }
 .header__img {
     width: 30%;
-    position: absolute;
-    left: 40%;
-    transform: translateX(-50%);
-    z-index: 5;
 }
+@media (min-width: 2000px) {
+    .header {
+        a {
+            font-size: 1.6vw;
+        }
+    }
+    .header__inner {
+        margin-bottom: 250px;
+    }
+    .header__title {
+        font-size: 6vw;
+    }
+}
+@media (min-width: 2600px) {
+    .header {
+        height: auto;
+        a {
+            font-size: 30px;
+        }
+    }
+    .header__inner {
+        margin-bottom: 200px;
+    }
+    .header__title {
+        font-size: 140px;
+    }
+}
+
+//==================================SERVICES===================================================
+
 .services {
     padding-bottom: 80px;
 }
@@ -131,6 +181,18 @@ body {
 .services__item-link:hover {
     color: #00808a;
 }
+@media (min-width: 2000px) {
+    .services__item-link {
+        font-size: 2vw;
+    }
+}
+@media (min-width: 2600px) {
+    .services__item-link {
+        font-size: 40px;
+    }
+}
+
+//==================================ABOUT===================================================
 
 .about {
     position: relative;
@@ -170,6 +232,26 @@ body {
         transform: rotate(360deg);
     }
 }
+@media (min-width: 2000px) {
+    .about {
+        padding-top: 10%;
+    }
+    .about__text {
+        font-size: 1.5vw;
+        margin-top: 250px;
+    }
+}
+@media (min-width: 2600px) {
+    .about {
+        padding-top: 10%;
+    }
+    .about__text {
+        font-size: 40px;
+        margin-top: 150px;
+    }
+}
+
+//==================================SLIDER1__BLOCK===================================================
 
 .slider1__block {
     padding-bottom: 100px;
@@ -242,6 +324,17 @@ body {
         transform: translateX(0%);
     }
 }
+@media (min-width: 2000px) {
+    .slider1__wrapper {
+        height: auto;
+    }
+    .slider1 {
+        max-width: 1920px;
+    }
+}
+
+//==================================KEYS===================================================
+
 .keys {
     background-color: white;
 }
@@ -295,8 +388,10 @@ body {
     filter: grayscale(100%);
     transition: 3s;
 }
+.slider2__item:hover {
+    filter: grayscale(0%);
+}
 .slick-active {
-
     filter: grayscale(0%);
     .slider2__item-img {
         width: 100%;
@@ -314,6 +409,17 @@ body {
     width: 60%;
     margin: 0 auto;
 }
+@media (min-width: 2550px) {
+    .keys {
+        padding-bottom: 150px;
+    }
+    .slider2 {
+        height: 750px;
+    }
+}
+
+//==================================CONTACTS===================================================
+
 .contacts {
     background-color: black;
     color: white;
@@ -348,6 +454,9 @@ body {
     letter-spacing: -5%;
     font-weight: 400;
 }
+
+//==================================FORM-BLOCK===================================================
+
 .contacts__form {
     margin-bottom: 100px;
 }
@@ -409,7 +518,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .contacts__item {
     -ms-flex-preferred-size: 33%;
@@ -452,6 +561,8 @@ body {
 .conacts__bottom-link {
     color: #818181;
     text-decoration: none;
+    position: relative;
+    z-index: 50;
 }
 .conacts__bottom-link:hover {
     color: white;
@@ -460,6 +571,13 @@ body {
     height: 1px;
     background-color: #818181;
 }
+@media (min-width: 2550px) {
+    .contacts__img {
+        transform: translateX(-50%);
+    }
+}
+
+//==================================FOOTER===================================================
 
 .footer__text {
     color: #818181;
@@ -470,7 +588,9 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+
   
+//==================================SCROLL__STYLES===================================================
 
 /* полоса прокрутки (скроллбар) */
 ::-webkit-scrollbar {
